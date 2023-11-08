@@ -98,6 +98,7 @@ const About = () => {
           <img
             src={customer}
             style={{ height: "90%", width: "100%", borderRadius: "20px" }}
+            alt="customer"
           />
           <div>
             <h2>
@@ -143,9 +144,6 @@ const About = () => {
               consectetur adipisicing elit. Distinctio, aut.
             </p>
             <button className="btn btn-black">Contact our team</button>
-          </div>
-          <div>
-            <img />
           </div>
         </div>
       </section>

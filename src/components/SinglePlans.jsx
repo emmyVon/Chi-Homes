@@ -13,6 +13,7 @@ const SinglePlans = ({ Title, level, ActivePlan }) => {
       <img
         src={desiredLevel.image}
         style={{ maxHeight: "100%", width: "100%", borderRadius: "20px" }}
+        alt={desiredLevel.plan}
       />
     </div>
   );
