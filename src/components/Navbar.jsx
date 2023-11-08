@@ -5,7 +5,7 @@ const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
     <div className="nav">
-      <h1>Wealthsimple</h1>
+      <h1>Chi-Homes</h1>
       <div className={openNav ? "nav-btn" : "nav-btn hide-nav"}>
         <AiOutlineClose className="close" onClick={() => setOpenNav(false)} />
         <button className="btn">Log in </button>
