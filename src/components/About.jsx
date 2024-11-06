@@ -11,11 +11,17 @@ const About = () => {
       <section className="intro">
         <div className="container intro-container">
           <div>
-            <h1>Looking to make investment in Real-Estate</h1>
+            <h1>
+              Looking to make investment in{" "}
+              <span className="real">Real-Estate</span>
+            </h1>
             <p>
-              Here at Chi-Homes we take you from zero to hero, walking your
-              through the stairs of financial breakthrough while considering
-              your Risk-tolerance
+              Here at{" "}
+              <span style={{ color: "goldenrod", opacity: "1" }}>
+                Chi-Homes
+              </span>{" "}
+              we take you from zero to hero, walking your through the stairs of
+              financial breakthrough while considering your Risk-tolerance
             </p>
             <button className="btn btn-black">Get started</button>
           </div>
@@ -28,7 +34,7 @@ const About = () => {
       </section>
       <section className="vid container">
         {" "}
-        <video src={video} controls="controls" width="100%" height="100%" />
+        <video src={video} width="100%" height="100%" autoPlay muted loop />
       </section>
       <section className="goals">
         <div className="container goals-container">
@@ -63,7 +69,7 @@ const About = () => {
       </section>
       <section className="confidence">
         <div className="container con-container">
-          <video src={vid2} height="100%" width="100%" controls="controls" />
+          <video src={vid2} height="100%" width="100%" autoPlay muted />
           <div>
             <div>
               <h3>withstand market highs and lows</h3>
@@ -150,16 +156,19 @@ const About = () => {
       <section className="quote">
         <div className="container quote-container">
           <h3>
-            "The best way to achieve your financial goals is by investing in
-            low-cost, diversified portfolios of risk-appropriate assets. Our
-            goal is to set you up for reliable returns across a range of market
-            conditions" <span>~Emmanuel</span>
+            <i>
+              "The best way to achieve your <strong>financial goals </strong>is
+              by investing in low-cost, diversified portfolios of
+              risk-appropriate assets. Our goal is to set you up for reliable
+              returns across a range of market conditions"{" "}
+              <span style={{ color: "white" }}>~Emmanuel</span>{" "}
+            </i>
           </h3>
         </div>
       </section>
       <section className="faqs">
         <div className="container faqs-container">
-          <h2>FAQ</h2>
+          <h2 style={{ fontWeight: "600" }}>FAQ</h2>
           <Faq />
         </div>
       </section>

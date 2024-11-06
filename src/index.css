@@ -1,38 +1,36 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  
 }
-body{
+body {
   scroll-behavior: smooth;
 }
 
-
-.container{
+.container {
   margin-inline: auto;
   width: 90%;
   max-width: 1300px;
 }
-button{
+button {
   background: transparent;
   border: none;
   cursor: pointer;
-
 }
-h1{
+h1 {
   font-size: 3rem;
   margin-bottom: 1.2rem;
 }
-h2{
+h2 {
   font-size: 2rem;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
 
-p{
+p {
   font-size: 1.2rem;
+  opacity: 0.8;
 }

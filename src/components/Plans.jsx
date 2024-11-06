@@ -31,36 +31,40 @@ const Plans = () => {
       <div className="container plans">
         <h1>Plans</h1>
         <div>
-          <div className="plans-btn">
-            <div className="invest-btn" onClick={switcher}>
-              <button className="active">Investment</button>
-              <button>Purchase</button>
-              <button>Lease</button>
-            </div>
-            <div className="slider">
-              <div className="slide-mark">{ActivePlan.Planlevel}</div>
-              <div>
-                <label>Select risk Tolerance:</label>
-                <input
-                  type="range"
-                  min={1}
-                  max={3}
-                  className="range"
-                  onChange={levelSwitch}
-                />
-              </div>
-            </div>
-          </div>
-
-          <p>
+          <h3>
             Wide Variety of Investment plans Available for your financial
             breakthrough
+          </h3>
+          <p>
+            Select an investment Strategy and guide your investment according to
+            your risk tolerance
           </p>
-          <div className="plans-container">
-            {ActivePlan.plan.map((i) => (
-              <SinglePlans {...i} ActivePlan={ActivePlan} />
-            ))}
+        </div>
+        <div className="plans-btn">
+          <div className="invest-btn" onClick={switcher}>
+            <button className="active">Investment</button>
+            <button>Purchase</button>
+            <button>Lease</button>
           </div>
+          <div className="slider">
+            <div className="slide-mark">{ActivePlan.Planlevel}</div>
+            <div>
+              <label>Select risk Tolerance:</label>
+              <input
+                type="range"
+                min={1}
+                max={3}
+                className="range"
+                onChange={levelSwitch}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="plans-container">
+          {ActivePlan.plan.map((i) => (
+            <SinglePlans {...i} ActivePlan={ActivePlan} />
+          ))}
         </div>
       </div>
     </section>
